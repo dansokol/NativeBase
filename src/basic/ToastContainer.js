@@ -144,7 +144,10 @@ class ToastContainer extends Component {
       toValue: 0,
       duration: 200,
       useNativeDriver: false
-    }).start(this.closeModal.bind(this, reason));
+    }).start(() => {
+      this.closeModal.bind(this, reason);
+      this.state.pan.setValue({ x: 0, y: 0 });
+    });
   }
 
   render() {
