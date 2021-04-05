@@ -26,7 +26,7 @@
       "node_modules/(?!react-native|@shoutem|react-clone-referenced-element|native-base-shoutem-theme)"
     ]
   },
-  "version": "2.13.12",
+  "version": "2.13.14",
   "license": "Apache-2.0",
   "private": false,
   "dependencies": {
@@ -72,17 +72,12 @@
   },
   "gitHead": "5bbeacc403ba97622703699132c55d8359344004",
   "homepage": "https://github.com/GeekyAnts/NativeBase#readme",
-  "main": "dist/src/index.js",
+  "main": "src/index.js",
   "typings": "./index.d.ts",
   "optionalDependencies": {},
   "peerDependencies": {
     "react": ">=16.4.1",
     "react-native": ">=0.56.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && pretty-quick --staged --pattern \"src/**/*.{js, json}\""
-    }
   },
   "readmeFilename": "README.md",
   "repository": {
